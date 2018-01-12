@@ -1,0 +1,52 @@
+#button{
+  grid-column: 3/4;
+}
+
+body{
+  min-height: 5vh;
+  display: grid;
+  grid-template-columns: 1fr, auto, auto, 1fr;
+  justify-content: right;
+  align-items: center;
+  grid-gap: 1em;
+  overflow-x: hidden;
+}
+
+.vlakje{
+  grid-column: 3/4;
+  width: 15em;
+  height: 6em;
+  transition: transform .6s cubic-bezier(.17,.67,.71,1.29);
+  border: 1px grey solid;
+  background-color: #1a1a1a;
+}
+
+.vlakje--schuif-uit{
+  transform: translateX(50vw);
+}
+
+.vlakje2{
+  grid-column:3/4;
+  width: 15em;
+  height: 6em;
+  transition: transform .7s cubic-bezier(.17,.67,.71,1.29);
+  border: 1px grey solid;
+  background-color: darkred;
+}
+
+.vlakje2--schuif-uit{
+  transform: translateX(50vw);
+}
+
+.vlakje3{
+  grid-column: 3/4;
+  width: 15em;
+  height: 6em;
+  transition: transform .8s cubic-bezier(.17,.67,.71,1.29);
+  border: 1px grey solid;
+  background-color: lightgrey;
+}
+
+.vlakje3--schuif-uit{
+  transform: translateX(50vw);
+}
